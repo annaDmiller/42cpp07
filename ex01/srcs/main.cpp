@@ -20,7 +20,7 @@ int main(void)
     int arr[] = {1, 2, 3, 4, 5, 6};
     print_arr(&(arr[0]), sizeof(arr) / sizeof(int));
 
-    iter(&(arr[0]), sizeof(arr) / sizeof(int), &increase_int);
+    iter<int>(&(arr[0]), sizeof(arr) / sizeof(int), &increase_int);
 
     print_arr(&(arr[0]), sizeof(arr) / sizeof(int));
     return (0);
