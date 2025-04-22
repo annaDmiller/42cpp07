@@ -2,9 +2,9 @@ CC = c++
 
 CC_FLAGS = -Wall -Werror -Wextra -std=c++98 -g3 -I./includes
 
-NAME = 
+NAME = template_array
 
-SOURCES =	./srcs/main.cpp 
+SOURCES =	./srcs/main.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
