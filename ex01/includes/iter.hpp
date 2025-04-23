@@ -11,3 +11,11 @@ void iter(T* array, size_t len, void (*func)(T&))
         func(array[ind]);
     return ;
 }
+
+template <typename T>
+void iter(T* array, size_t len, void (*func)(const T&))
+{
+    for (size_t ind = 0; ind < len; ind++)
+        func(array[ind]);
+    return ;
+}
